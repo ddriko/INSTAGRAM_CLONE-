@@ -1,3 +1,9 @@
+:root {
+    --main-bg-color: rgb(243, 243, 243);
+    --link-blue: #0095f6;
+    --login-box-color: #ffffff;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +16,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--main-bg-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -38,8 +44,8 @@ body {
 
 .instagram-continue {
     display: flex;
-    align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
+    align-items: center; 
+    justify-content: space-around; 
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -50,7 +56,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--login-box-color);
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
@@ -77,14 +83,14 @@ body {
 }
 
 .instagram-login {
-    background-color: #0095f6;
-    color: #ffffff;
+    background-color: var(--link-blue);
+    color: var(--login-box-color);
     padding: 8px;
     border-radius: 4px;
 }
 
 .instagram-logout {
-    color: #0095f6;
+    color: var(--link-blue);
     margin-top: 1rem;
 }
 
@@ -93,7 +99,7 @@ body {
 }
 
 .link-blue {
-    color: #0095f6;
+    color: var(--link-blue);
 }
 
 .get-the-app {
